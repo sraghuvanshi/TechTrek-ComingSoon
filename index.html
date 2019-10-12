@@ -139,5 +139,13 @@
     </div>
 
     <script src="./script/count.js"></script>
+    
+    <!-- audio -->
+    <audio src="./img/bgaudio.mp3" id="my_audio" loop="loop" autoplay="autoplay" preload:='auto' onended= 'window.location.reload()'></audio>
+    <script type="text/javascript">
+      window.onload=function(){
+          document.getElementById("my_audio").play();
+        }
+      </script>
   </body>
 </html>

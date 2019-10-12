@@ -257,7 +257,7 @@ body {
     display: block;
     width: 100%;
     margin-left: 0px;
-    margin-bottom: 10px;
+    margin-top: 5vh;
   }
 
   .footer .blue {
@@ -266,14 +266,9 @@ body {
   }
 
   .footer .forum {
-    width: 100%;
-    margin-left: 0px;
+    display:none;
   }
 
-  .footer .forum .content {
-    display: block;
-    float: none;
-  }
 }
 
 /* spider  */

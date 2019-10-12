@@ -86,8 +86,9 @@ body {
   height: 116px;
   border-radius: 8px;
   background-color: rgba(78, 75, 117, 0.6);
-  /* opacity: 0.6; */
   display: flex;
+  justify-content: center;
+
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 1);
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 1);
@@ -123,6 +124,65 @@ body {
   margin: 0%;
   margin-top: 4%;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1030px) {
+  .container {
+    display: block;
+    height: 85vh;
+  }
+
+  /* ill */
+  .container .ill {
+    height: 50%;
+    width: 100%;
+  }
+  .container .logo-wrap {
+    height: 184px;
+    width: 231px;
+    /* border: 1px solid green; */
+    margin-top: 50px;
+  }
+  .container .logo {
+    height: inherit;
+    width: inherit;
+    margin-left: 0px;
+  }
+
+  /* info  */
+  .container .info {
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+  .container .info .heading {
+    /* border: 1px solid blue; */
+    width: 90vw;
+    height: 26px;
+  }
+  .container .info .heading p {
+    font-size: 18px;
+  }
+
+  .container .info .count {
+    width: 90vw;
+    height: 86px;
+  }
+
+  .container .info .count .element {
+    padding: 12px;
+    padding-top: 18px;
+  }
+
+  .container .info .count .element .num {
+    font-size: 35px;
+  }
+  .container .info .count .colon {
+    font-size: 35px;
+    margin-top: 5%;
+  }
 }
 
 .footer {
@@ -164,6 +224,39 @@ body {
 .footer .forum .content {
   display: flex;
   float: right;
+}
+
+@media only screen and (max-width: 1030px) {
+  .footer {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: block;
+    font-size: 2vh;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .footer .ncs {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  .footer .blue {
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+
+  .footer .forum {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .footer .forum .content {
+    display: block;
+    float: none;
+  }
 }
 
 /* spider  */
@@ -238,6 +331,15 @@ body {
   }
 }
 
+@keyframes cloud1Mobile {
+  from {
+    left: 6vw;
+  }
+  to {
+    left: 2vw;
+  }
+}
+
 /* cloud 2  */
 
 .cloud2-wrap {
@@ -258,5 +360,16 @@ body {
   }
   to {
     left: 2vw;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .cloud1-wrap {
+    top: 35vh;
+    left: 6vw;
+    animation-name: cloud1Mobile;
+  }
+  .cloud2-wrap {
+    display: none;
   }
 }

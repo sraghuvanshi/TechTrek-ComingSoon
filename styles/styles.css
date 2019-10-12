@@ -181,7 +181,24 @@ body {
   }
   .container .info .count .colon {
     font-size: 35px;
-    margin-top: 5%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .container .info .count {
+    margin-top:30px;
+  }
+  .container .info .count .element {
+    padding: 6px;
+    padding-top: 18px;
+  }
+  .container .info .count .element .num {
+    font-size: 25px;
+  }
+  .container .info .count .colon {
+    font-size: 25px;
+    margin-top: 15px;
   }
 }
 

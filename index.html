@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <title>Tech-Trek'19 | Coming Soon</title>
   </head>
   <body>
@@ -128,24 +128,48 @@
     <div class="footer">
       <div class="ncs">
         <p class="white">DEVELOPED BY :</p>
-        <p class="blue"><a href="http://hackncs.com/" target="_blank">NIBBLE COMPUTER SOCIETY</a></p>
+        <p class="blue">
+          <a href="http://hackncs.com/" target="_blank"
+            >NIBBLE COMPUTER SOCIETY</a
+          >
+        </p>
       </div>
       <div class="forum">
         <div class="content">
           <p class="white">ALUMNI'S & FACULTY, VISIT :</p>
-          <p class="blue"><a href="https://www.facebook.com/nibblecomputersociety/" target="_blank">FORUM FOR TREKKING</a></p>
+          <p class="blue">
+            <a
+              href="https://www.facebook.com/nibblecomputersociety/"
+              target="_blank"
+              >FORUM FOR TREKKING</a
+            >
+          </p>
         </div>
       </div>
     </div>
 
+    <audio autoplay="true" loop="true" id="playAudio">
+      <source src="./img/bgaudio.mp3" />
+    </audio>
+    <iframe
+      src="./img/bgaudio.mp3"
+      autoplay="true"
+      loop
+      style="display:none"
+      id="iframeAudio"
+    >
+    </iframe>
+
     <script src="./script/count.js"></script>
-    
-    <!-- audio -->
-    <audio src="./img/bgaudio.mp3" id="my_audio" loop="loop" autoplay="autoplay" preload:='auto' onended= 'window.location.reload()'></audio>
     <script type="text/javascript">
-      window.onload=function(){
-          document.getElementById("my_audio").play();
-        }
-      </script>
+      var isChrome =
+        /Chrome/.test(navigator.userAgent) &&
+        /Google Inc/.test(navigator.vendor);
+      if (!isChrome) {
+        $("#iframeAudio").remove();
+      } else {
+        $("#playAudio").remove(); //just to make sure that it will not have 2x audio in the background
+      }
+    </script>
   </body>
 </html>

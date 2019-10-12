@@ -167,7 +167,7 @@ body {
   }
 
   .container .info .count {
-    width: 90vw;
+    width: 95vw;
     height: 86px;
   }
 
@@ -267,6 +267,13 @@ body {
   position: fixed;
   right: -60px;
   top: -20px;
+}
+
+@media (max-width: 768px) {
+  .spider-wrap {
+    top: -65px;
+    right: -30px;
+  }
 }
 
 .spider-wrap svg {
@@ -371,5 +378,17 @@ body {
   }
   .cloud2-wrap {
     display: none;
+  }
+}
+
+.web-svg {
+  height: 355px;
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  .web-svg {
+    width: 175px;
+    height: 275 px;
   }
 }

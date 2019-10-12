@@ -1,0 +1,262 @@
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  background: url("/img/newbg11.png");
+  background-size: cover;
+}
+
+@font-face {
+  font-family: plight;
+  src: url("../fonts/light.woff");
+}
+@font-face {
+  font-family: preg;
+  src: url("../fonts/regualar.woff");
+}
+@font-face {
+  font-family: pbold;
+  src: url("../fonts/bold.woff");
+}
+@font-face {
+  font-family: pextra;
+  src: url("../fonts/extrabold.woff");
+}
+
+.container {
+  margin-top: 20px;
+  height: 90%;
+  width: 100%;
+  /* background-color: #1b1b40; */
+  display: flex;
+}
+
+.container .ill {
+  height: 100%;
+  width: 55%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .logo-wrap {
+  height: 324px;
+  width: 391px;
+  /* border: 1px solid green; */
+}
+.container .logo {
+  height: inherit;
+  width: inherit;
+  margin-left: 50px;
+}
+
+.container .info {
+  height: 100%;
+  width: 45%;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* padding-left: 100px; */
+}
+
+.container .info .heading {
+  /* border: 1px solid blue; */
+  width: 500px;
+  height: 38px;
+  text-align: center;
+}
+.container .info .heading p {
+  color: #fff;
+  font-family: "pbold";
+  font-size: 28px;
+  margin: 0%;
+  letter-spacing: 1.56px;
+}
+
+.container .info .count {
+  /* border: 1px solid pink; */
+  width: 500px;
+  height: 116px;
+  border-radius: 8px;
+  background-color: rgba(78, 75, 117, 0.6);
+  /* opacity: 0.6; */
+  display: flex;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 1);
+}
+
+.container .info .count .element {
+  padding: 23px;
+  text-align-last: center;
+  color: #ffffff;
+  opacity: 1;
+  margin: 0%;
+  /* border: 1px solid red; */
+}
+
+.container .info .count .element .num {
+  font-size: 55px;
+  font-family: "pextra";
+  margin: 0%;
+  /* border: 1px solid red; */
+}
+
+.container .info .count .element .alpha {
+  font-size: 15px;
+  font-family: "plight";
+  margin: 0%;
+  position: static;
+  /* border: 1px solid red; */
+}
+
+.container .info .count .colon {
+  font-size: 55px;
+  font-family: "pextra";
+  margin: 0%;
+  margin-top: 4%;
+  color: #ffffff;
+}
+
+.footer {
+  /* height: 20px; */
+  width: 100%;
+  display: flex;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.footer .ncs {
+  width: 50%;
+  display: flex;
+  /* border: 1px solid red; */
+  margin-left: 40px;
+}
+
+.footer .white {
+  color: #ffffff;
+  font-family: "pbold";
+  letter-spacing: 0.4px;
+  margin: 0%;
+}
+
+.footer .blue {
+  color: #2699fb;
+  font-family: "preg";
+  letter-spacing: 0.8px;
+  margin: 0%;
+  margin-left: 30px;
+}
+
+.footer .forum {
+  width: 43%;
+  /* border: 1px solid green; */
+  float: right;
+}
+
+.footer .forum .content {
+  display: flex;
+  float: right;
+}
+
+/* spider  */
+
+.spider-wrap {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  right: -60px;
+  top: -20px;
+}
+
+.spider-wrap svg {
+  float: right;
+}
+
+.spider-wrap #spidy {
+  animation-name: spider;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.spider-wrap #thread {
+  animation-name: thread;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes spider {
+  from {
+    height: 35px;
+  }
+  to {
+    height: 115px;
+  }
+}
+
+@keyframes thread {
+  from {
+    height: 153px;
+  }
+  to {
+    height: 203px;
+  }
+}
+
+/* cloud 1  */
+
+.cloud1-wrap {
+  position: fixed;
+  top: 45vh;
+  left: 42vw;
+  animation-name: cloud1;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes cloud1 {
+  from {
+    left: 42vw;
+  }
+  to {
+    left: 43vw;
+  }
+}
+
+/* cloud 2  */
+
+.cloud2-wrap {
+  position: fixed;
+  top: 48vh;
+  left: 6vw;
+  animation-name: cloud2;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes cloud2 {
+  from {
+    left: 3vw;
+  }
+  to {
+    left: 2vw;
+  }
+}

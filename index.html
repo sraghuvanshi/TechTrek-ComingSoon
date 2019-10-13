@@ -148,7 +148,20 @@
       </div>
     </div>
 
-    <audio autoplay="true" loop="true" id="playAudio">
+    <script src="./script/count.js"></script>
+
+    <!-- audio  -->
+    <audio id="music" src="./audio/bgaudio.mp3" autoplay="autoplay" loop="loop" preload="auto"></audio>
+    <div class="playbtn-wrap">
+      <img class="playbtn" onclick="togglePlay()"src="./img/volume.jpg" alt=".">
+    </div>
+
+    <script src="./script/music.js"></script>
+
+    <!-- audio  -->
+
+
+    <!-- <audio autoplay="true" loop="true" id="playAudio">
       <source src="./img/bgaudio.mp3" />
     </audio>
     <iframe
@@ -159,8 +172,6 @@
       id="iframeAudio"
     >
     </iframe>
-
-    <script src="./script/count.js"></script>
     <script type="text/javascript">
       var isChrome =
         /Chrome/.test(navigator.userAgent) &&
@@ -170,6 +181,6 @@
       } else {
         $("#playAudio").remove(); //just to make sure that it will not have 2x audio in the background
       }
-    </script>
+    </script> -->
   </body>
 </html>
